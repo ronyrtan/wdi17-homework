@@ -40,7 +40,6 @@ later to make it more interactive.
 need to be differentiated) */
 
 
-
 var station = [
   { name: 'N', station: ['Times Square', '34th', '28th', '23rd', 'Union Square', '8th'] },
   { name: 'L', station: ['8th', '6th', 'Union Square', '3rd', '1st'] },
@@ -54,17 +53,15 @@ var tripTwoArray = [];
 
 var planTrip = function (startLine, startStation, endLine, endStation) {
 
-  directions(startLine, startStation, endLine, endStation); // had to call the planTrip() twice for it to work.
-  directions(startLine, startStation, endLine, endStation); // by calling on directions twice it supports all the arrays and cloned perfectly.
+  directions(startLine, startStation, endLine, endStation);
 
-  console.log("Your must travel through the following stops on the " + startLine + " line: " + tripOne + ".")
+  console.log("You must travel through the following stops on the " + startLine + " line: " + tripOne + ".")
   if (startLine !== endLine) {
     console.log("Change at Union Square.")
-    console.log("Your journey continues through the following stops: " + tripTwo + ".")
+    console.log("Your journey continues through the following stops on the " + endLine + " line: " + tripTwo + ".")
   }
   console.log((tripOneArray.length + tripTwoArray.length) + " stops in total.")
 };
-
 
 var getLine = function (line) { // gets index of Line
   for (var i = 0; i < station.length; i++) {
@@ -94,8 +91,8 @@ var directions = function (startLine, startStation, endLine, endStation) { // sa
       tripOne = tripOneArray.join(", ");
       tripTwoArray = [];
     } else {
-      station[sLine].station.reverse();
-      tripOneArray = station[sLine].station.slice(sStation + 1, eStation + 1);
+      tripOneArray = station[sLine].station.slice(eStation, sStation); //reverse the tripOneArray instead of the stationArray
+      tripOneArray.reverse();
       tripOne = tripOneArray.join(", ");
       tripTwoArray = [];
     }
@@ -104,8 +101,8 @@ var directions = function (startLine, startStation, endLine, endStation) { // sa
       tripOneArray = station[sLine].station.slice(sStation + 1, startUS + 1);
       tripOne =  tripOneArray.join(", ");
     } else {
-      station[sLine].station.reverse();
-      tripOneArray = station[sLine].station.slice(sStation + 1, startUS + 1);
+      tripOneArray = station[sLine].station.slice(startUS, sStation);
+      tripOneArray.reverse();
       tripOne = tripOneArray.join(", ");
     }
 
@@ -113,8 +110,8 @@ var directions = function (startLine, startStation, endLine, endStation) { // sa
       tripTwoArray = station[eLine].station.slice(endUS + 1, eStation + 1);
       tripTwo =  tripTwoArray.join(", ");
     } else {
-      station[eLine].station.reverse();
-      tripTwoArray = station[eLine].station.slice(endUS + 1 , eStation + 1);
+      tripTwoArray = station[eLine].station.slice(eStation, endUS);
+      tripTwoArray.reverse();
       tripTwo = tripTwoArray.join(", ");
     }
   }
