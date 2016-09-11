@@ -41,5 +41,41 @@ Begin exploring the JavaScript Koans. Fork, clone and start trying them. */
 // bank = [accounts1,acount2, etc ]
 // function returnTotalSum = get total amount from accounts
 // function addacounts . push account to bank.
-// accounts = {currentBalance: , ownerName: }
+// accounts = {accountBalance: , accountName: }
 // function to change value of currentBalance.
+
+
+var accountArray = [
+  { accountBalance: 420,
+    accountName: "Blaze It"},
+  { accountBalance: 666,
+    accountName: "Satan Devil"},
+  { accountBalance: 1000000,
+    accountName: "Rich Bawler"}
+];
+
+
+
+this.currentBalance = 0;
+this.ownerName = "";
+
+var addAccount = function (balance, name ) {
+  this.accountBalance = balance;
+  this.accountName = name;
+//  this.accountArray.push({this.accountBalance: balance, this.accountName: name}); //this.push()
+}
+
+var viewAccounts = function () {
+
+
+  return accountArray;
+};
+
+var bank = []; // [account1, account2, account3];
+
+
+
+
+var returnTotalSum = function () {
+
+}

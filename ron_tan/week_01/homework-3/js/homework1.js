@@ -81,7 +81,7 @@ var isIsosceles = function () {
 console.log(isIsosceles());
 
 
-var triArea = function () {
+var triArea = function () {     //herons formula
   var perimeter = (triangle.sideA + triangle.sideB + triangle.sideC)/2;
   var area =  Math.sqrt(perimeter * ((perimeter - triangle.sideA) * (perimeter - triangle.sideB) * (perimeter - triangle.sideC)));
   return area;

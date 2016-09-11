@@ -52,7 +52,7 @@ var ruleOne = function (cardNum, response) {
   if (cardNum.length === 16 && isNaN(cardNum) === false) {
     return true;
   } else {
-    response.error = "wrong_length"
+    response.error = "wrong_length";
     return false;
   }
 };
@@ -62,11 +62,11 @@ var ruleOne = function (cardNum, response) {
 var ruleTwo = function (cardNum, response) {
   var firstNum = cardNum[0];
   for(var i = 0; i < cardNum.length; i++){
-    if (cardNum[i] !== firstNum) {
+    if (cardNum[i] !== firstNum) {                  // checks if the firstnumber of the array is different from the rest of the array
       return true;
     }
   }
-  response.error = "all_the_same_digits";           //if for loop has ended, all digits are same, hence fails.
+  response.error = "all_the_same_digits";           // if for loop has ended, all digits are same, hence fails.
   return false;
 };
 
