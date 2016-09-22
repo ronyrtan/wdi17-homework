@@ -13,6 +13,4 @@ Enter the desired name for each player in the input boxes provided above the boa
 
 The ability to start a new game / rest the game can be only be acquired after the game has ended. This way players are not able to cheat and reset the game from making a wrong move, instead they must learn from their mistakes in the next round.
 
-### Link to the game :
-
-[Tic Tac Toe](file:///Users/Ron/Projects/wdi17-homework/ron_tan/week_03/project-0/index.html)
+Have fun!
