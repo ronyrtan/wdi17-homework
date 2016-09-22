@@ -50,13 +50,22 @@ var checkingBalance = 0;
 var savingsBalance = 0;
 
 var checkingDeposit = function (amount) {
+  if (isNaN(amount)) {
+    amount = 0;
+  }
+  if (amount < 0) {
+    amount = 0;
+  }
   checkingBalance = checkingBalance + amount;
   return checkingBalance;
 }
 
 var checkingWithdraw = function (amount) {
-  if (amount === NaN){
-    return 0;
+  if (isNaN(amount)) {
+    amount = 0;
+  }
+  if (amount < 0) {
+    amount = 0;
   }
   checkingBalance = checkingBalance - amount;
   if (checkingBalance < 0) {
@@ -76,11 +85,23 @@ var checkingWithdraw = function (amount) {
 
 
 var savingsDeposit = function (amount) {
+  if (isNaN(amount)) {
+    amount = 0;
+  }
+  if (amount < 0) {
+    amount = 0;
+  }
   savingsBalance = savingsBalance + amount;
   return savingsBalance;
 }
 
 var savingsWithdraw = function (amount) {
+  if (isNaN(amount)){
+    amount = 0;
+  }
+  if (amount < 0) {
+    amount = 0;
+  }
   savingsBalance = savingsBalance - amount;
   if (savingsBalance < 0) {
     if (checkingBalance > Math.abs(savingsBalance)) {
