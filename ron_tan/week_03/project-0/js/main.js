@@ -85,8 +85,6 @@ var inputMark = function (x, y) {
 /* ===== AI ===== *
 
 button = switch between multiplayer vs AI
-// if time add animation.
-
 
 if turn === 1; // then AI move // player 2 move;
 
@@ -129,6 +127,22 @@ aiMove = function (player) {
 
 } else {
   inputMark into an empty corner.
+}
+
+
+
+to test for where shouldnt put it // test which box wont allow for AI to win. use this as an else if at bottom.
+
+(ticTacToe[i][0] === !player && ticTacToe[i][1] === player && ticTacToe[i][2] === "") ||
+(ticTacToe[i][0] === player && ticTacToe[i][1] === !player && ticTacToe[i][2] === "") ||
+
+(ticTacToe[i][0] === !player && ticTacToe[i][1] === "" && ticTacToe[i][2] === player) ||
+(ticTacToe[i][0] === player && ticTacToe[i][1] === "" && ticTacToe[i][2] === !player) ||
+
+(ticTacToe[i][0] === "" && ticTacToe[i][1] === !player && ticTacToe[i][2] === player) ||
+(ticTacToe[i][0] === "" && ticTacToe[i][1] === player && ticTacToe[i][2] === !player) {
+
+ inputMark in another square besides "".
 }
 
 
