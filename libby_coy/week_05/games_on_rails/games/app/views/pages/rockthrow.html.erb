@@ -1,7 +1,7 @@
-<h2>The computer has guessed <%= @computerthrow %></h2>
+<p>The computer has guessed <%= @computerthrow %></p>
+<p>You have guessed <%= @userthrow %></p>
 
-<h2>You have guessed <%= @userthrow %></h2>
-
+<h2>
 <% if @computerthrow == @userthrow %>
   <%= @draw %>
   <% elsif @computerthrow == "rock" && @userthrow == "scissors"%>
@@ -19,3 +19,4 @@
     <% else %>
     <%= @draw %>
 <% end %>
+</h2>
