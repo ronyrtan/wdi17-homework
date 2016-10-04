@@ -1,0 +1,13 @@
+body {
+  max-width: 800px;
+  margin-left 100px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
