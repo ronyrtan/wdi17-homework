@@ -4,6 +4,7 @@ class MountainsController < ApplicationController
   end
 
   def edit
+    @mountain = Mountain.find params[:id]
   end
 
   def new
@@ -21,7 +22,13 @@ class MountainsController < ApplicationController
   def update
     mountain = Mountain.find params[:id]
     mountain.update mountain_params
-    redirect_to mountain_path(planet.id)
+    redirect_to mountain_path(mountain.id)
+  end
+
+  def destroy
+    mountain = Mountain.find params[:id]
+    mountain.destroy
+    redirect_to mountains_path
   end
 
   private

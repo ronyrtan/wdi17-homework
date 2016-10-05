@@ -4,6 +4,6 @@
 
 <ul>
   <% @mountains.each do |mountain| %>
-    <li><%= link_to(mountain.name, mountain_path(mountain.id)) %> has <%= pluralize(mountain.water, 'water') %></li>
+    <li><%= link_to(mountain.name, mountain_path(mountain.id)) %> located in <%= mountain.location%></li>
   <% end %>
 </ul>
