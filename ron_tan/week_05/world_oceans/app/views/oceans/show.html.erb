@@ -1,0 +1,18 @@
+<div class="oceanInfo">
+
+<h1><%= @ocean.name %> Ocean</h1>
+
+<%= image_tag @ocean.image, :class => 'feature' %><br>
+Area:  <%=  @ocean.area %> km squared<br>
+Volume:  <%=  @ocean.volume %> km cubed<br>
+Depth:  <%= @ocean.depth %> m<br>
+Coastline:  <%= @ocean.coastline %> km<br>
+
+</div>
+
+<div class="controls">
+  <div class="buttonEdit"><%= link_to "Edit ocean",
+  ocean_edit_path(@ocean.id) %></div>
+  <%= button_to 'Delete ocean',
+  ocean_delete_path(@ocean.id) %>
+</div>

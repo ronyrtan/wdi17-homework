@@ -1,0 +1,126 @@
+* {
+  font-family: 'trebuchet ms', sans-serif;
+}
+
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+  background-color: rgba(120, 200, 255, 0.55);
+  padding: 20px 40px 40px 40px;
+}
+nav{
+  background: rgba(212,228,239,1);
+  background: linear-gradient(45deg, rgba(70,127,168,1), rgba(212,228,239,1));
+  height: 40px;
+  max-width: 950px;
+  line-height: 40px;
+  margin: 0 auto;
+  padding-left: 10px;
+}
+ul {
+  list-style: none;
+  padding-left: 10px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+body {
+  color: white;
+  background:linear-gradient( rgba(170, 170, 170, 0.15), rgba(170, 170, 170, 0.15) ), url(http://compassworkshop.weebly.com/uploads/6/9/1/5/69159865/957869_orig.jpg);
+  background-size: 100%;
+}
+
+nav a {
+  margin: 0;
+  height: 38px;
+  width: 60px;
+  display: inline-block;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  /*border-top: 2px solid white;*/
+  border-bottom: 2px solid white;
+  text-shadow: 0 0 25px white;
+  letter-spacing: 3px;
+}
+
+.oceanBanner {
+  height: 200px;
+  width: 960px;
+  display: inline-block;
+  left: 50%;
+  margin-left: 152px;
+  margin-bottom: 0;
+}
+
+.oceanInfo {
+  line-height: 2em;
+}
+
+.oceanInfo h1 {
+  letter-spacing: 3px;
+}
+
+.imgPoster {
+  height: 420px;
+  width: 300px;
+  border-radius: 4px;
+}
+
+.oceanList {
+  font-size: 1.1em;
+  line-height: 25px;
+}
+
+.oceanList li {
+  display: inline-block;
+  width: 19%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  /*border-radius: 10px;*/
+}
+
+.oceanList li:hover {
+  /*box-shadow: 0 0 20px white;*/
+  border-bottom: 2px solid white;
+  letter-spacing: 2px;
+}
+
+.feature {
+  border-radius: 10px;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+.controls:hover {
+  text-shadow: 0 0 20px white;
+}
+
+.oceansHomeHeading {
+  letter-spacing: 3px;
+  padding-left: 50px;
+  width:
+}
+
+.buttonEdit {
+  background-color: lightgray;
+  width: 83px;
+  border-radius: 3px;
+  color: black;
+  font-size: .8em;
+  text-align: center;
+  color: black;
+}

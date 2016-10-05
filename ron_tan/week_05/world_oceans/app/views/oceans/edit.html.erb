@@ -1,0 +1,29 @@
+<form action="<%= ocean_path(@ocean.id) %>" method="post">
+<p>
+  <label for="name">Name:</label>
+  <input type="text" name="ocean[name]" id="name" placeholder="Pacific" value="<%= @ocean.name %>">
+</p>
+<p>
+  <label for="image">Image:</label>
+  <input type="url" name="ocean[image]" id="image" placeholder="http://maps.google.com/ocean.jpg" value="<%= @ocean.image %>">
+</p>
+<p>
+  <label for="area">Area:</label>
+  <input type="number" name="ocean[area]" id="area" placeholder="168723000" value="<%= @ocean.area %>">
+</p>
+<p>
+  <label for="volume">Volume:</label>
+  <input type="number" name="ocean[volume]" id="volume" placeholder="669880000" value="<%= @ocean.volume %>">
+</p>
+<p>
+  <label for="depth">Depth:</label>
+  <input type="number" name="ocean[depth]" id="depth" placeholder="3970" value="<%= @ocean.depth %>">
+</p>
+<p>
+  <label for="coastline">Coastline:</label>
+  <input type="number" name="ocean[coastline]" id="coastline" placeholder="135663" value="<%= @ocean.coastline %>">
+</p>
+
+<button type="submit">Update Ocean!</button>
+
+</form>
