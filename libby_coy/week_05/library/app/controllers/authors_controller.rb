@@ -18,23 +18,23 @@ class AuthorsController < ApplicationController
 
   def update
     author = Author.find params[:id]
-    author .update author _params
+    author.update author _params
     redirect_to author
   end
 
-  # def show
-  #   @artist = Artist.find params[:id]
-  # end
-  #
-  # def destroy
-  #   artist = Artist.find params[:id]
-  #   artist.destroy
-  #   redirect_to artists_path
-  # end
-  #
-  # private
-  #   def artist_params
-  #     params.require(:artist).permit(:name, :nationality, :dob, :period, :image)
-  #   end
+  def show
+    @author = Author.find params[:id]
+  end
+
+  def destroy
+    author = Author.find params[:id]
+    author.destroy
+    redirect_to authors_path
+  end
+
+  private
+    def author_params
+      params.require(:author).permit(:name, :nationality, :genre, :dob, :image, :owner_id)
+    end
 
 end
