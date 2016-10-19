@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  font-family: "Proxima Nova", "helvetica neue", helvetica, arial, sans-serif;
+}
+
+body {
+  background: #fcfcfc;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.image_thumb {
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px gray;
+  transition: all .3s ease;
+  transform-style: preserve-3d;
+}
+
+.image_thumb:hover {
+  box-shadow: 0 13px 13px gray;
+  // transform: rotateZ(10deg);
+  border-radius: 5%;
+  transform: scale(1.1);
+}
+
+
+
+
+.navbar {
+  border-bottom: 1px solid lightgray;
+  height: 50px;
+  line-height: 50px;
+  box-shadow: 0 2px 2px lightgray;
+  background: #212124;
+}
+
+.navbarsearch {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  left: 22.5%;
+}
+
+h1 {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 50px;
+  left: 10%;
+  color: white;
+}
+
+h1:hover {
+  color: lightgray;
+  cursor: pointer;
+}
+
+.form {
+  border: 1px solid lightgray;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 25px;
+  background-color: #ccc;
+  border-radius: 3px;
+  width: 180px;
+  position: relative;
+  display: inline-block;
+  transition: all 1s ease;
+  font-size: 12px;
+}
+
+.form:focus {
+  background: white;
+  width: 300px;
+}
+
+.search_button {
+  height: 30px;
+  background-color: #212124;
+  border: 1px solid #212124;
+  // border-radius: 5px;
+  left: -5px;
+  display: inline-block;
+  position: relative;
+  color: #212124;
+  vertical-align: middle;
+}
+
+.search_icon {
+  background: url(https://s.yimg.com/uy/build/images/sprites/icons-d2b7a799.png) -490px -362px no-repeat;
+  width: 18px;
+  height: 18px;
+  position: fixed;
+  top: 18px;
+  z-index: 4;
+  margin-left: 4px;
+}

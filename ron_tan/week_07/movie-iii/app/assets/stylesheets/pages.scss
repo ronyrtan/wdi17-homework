@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  // background-color: gray;
+  // border: 1px solid green;
+  font-family: Arial, sans-serif;
+  font-weight: 500;
+}
+
+////// NAV bar
+
+nav {
+  width: 100%;
+  height: 46px;
+  box-shadow: 0 0 5px gray;
+  margin-bottom: 10px;
+  background-color: white;
+  position: fixed;
+}
+
+.spacer {
+  width: 10px;
+  height: 46px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 7px;
+}
+
+.logo {
+  height: 46px;
+  line-height: 46px;
+  position: relative;
+  display: inline-block;
+  left: 20%;
+}
+
+.searchNav {
+  height: 46px;
+  line-height: 46px;
+  padding: 6px 0 0 6px;
+  display: inline-block;
+  position: fixed;
+  left: 38%;
+}
+
+.textForm {
+  border: 1px solid lightgray;
+  height: 2em;
+  border-radius: 3px;
+  width: 300px;
+  padding: 5px;
+  vertical-align: top;
+  background-color: white;
+}
+
+.submitForm {
+  height: 34px;
+  line-height: 30px;
+  font-size: 16px;
+  border: 1px solid #8d95cc;
+  color: #8d95cc;
+  background: aliceblue;
+  border-radius: 5px;
+  width: 50px;
+  vertical-align: top;
+  transition: all .2s ease;
+}
+
+.submitForm:hover {
+  background-color: #8d95cc;
+  color: white;
+}
+
+//////// CONTENTS
+
+body {
+  background-color: #f8f8f8
+}
+
+.container {
+  margin-top: 10px;
+  width: 960px;
+  margin: 0 auto;
+  // background-color: white;
+  height: 100%;
+}
+
+.thumbnails {
+  width: 220px;
+  height: 300px;
+  border-radius: 3px;
+  margin: 5px 10px;
+  box-shadow: 0 5px 8px gray;
+}
+
+.info {
+  margin-top: 10px;
+  width: 300px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  padding: 15px 0;
+  background: white;
+  box-shadow: 0 10px 10px gray;
+  display: inline-block;
+  position: relative;
+  // margin: 0 auto;
+
+}
+
+.details {
+  text-decoration: none;
+  list-style: none;
+  line-height: 1.5em;
+  padding: 0;
+}
+
+.details li {
+  //   background-color: gray;
+  // color: white;
+  padding-left: 15px;
+}
+
+.posterDetail {
+  height: 400px;
+  width: 300px;
+  margin-top: 18px;
+  margin-left: 0;
+}
+
+.posterTitle h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.details span {
+  width: 80px;
+  display: inline-block;
+  position: relative;
+}
+
+.youtubeVid {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  margin-top: 10px;
+  margin-left: 5px;
+  box-shadow: 0 10px 10px gray;
+  padding-bottom: -15px;
+  height: 476px;
+  background-color: white;
+  line-height: 600px;
+  padding-top: 76px;
+  border-radius: 5px;
+  border: 1px solid #dddddd;
+  background-color: black;
+}
+
+///// WELCOME PAGE
+
+.welcome {
+  width: 500px;
+  margin: 0 auto;
+  background: white;
+  border: 1px solid #dddddd;
+  padding: 20px;
+  border-radius: 5px;
+  line-height: 2em;
+  box-shadow: 0 5px 5px lightgray;
+}
+
+.welcome h2 {
+  margin-bottom: 10px;
+}

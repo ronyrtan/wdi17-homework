@@ -1,0 +1,18 @@
+<div class="navbar">
+
+  <h1>flickr</h1>
+
+  <div class="navbarsearch">
+  <div class="search_icon"></div>
+  <%= form_tag '#', :id => 'search' do %>
+    <%= search_field_tag :query, nil, :placeholder => 'Photos, people, or groups', :autofocus => true, :class => 'form', :autocomplete => 'off' %>
+    <%= button_tag 'Search', :class => 'search_button'%>
+  <% end %>
+  </div>
+
+</div>
+
+
+<div class="container">
+  <div id="images"></div>
+</div>

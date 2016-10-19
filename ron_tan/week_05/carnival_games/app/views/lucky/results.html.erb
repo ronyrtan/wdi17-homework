@@ -4,7 +4,9 @@
   <% if @lucky_num.to_i == @user_num.to_i %>
     <%= @lucky_num %> is the lucky number! You Win!
   <% else %>
+
     <%= @user_num %> is not the right number, You Lose! The lucky number was <%= @lucky_num %>
+
   <% end %>
 </p>
 
